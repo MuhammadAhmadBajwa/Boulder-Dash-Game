@@ -1,0 +1,50 @@
+step1:
+Download Dosbox-x from link below:
+https://dosbox-x.com/
+
+step2:
+Install dosbox-x on your computer in c drive or d drive
+
+
+step3:
+extract the zip file in c drive or d drive
+
+
+step4:
+Open dosbox-x
+
+step5:
+Enter following lines in dosbox-x
+
+; For c drive
+mount c c:\Project
+c:
+main.com
+
+; For d drive
+mount c d:\Project
+c:
+main.com
+
+
+NOTE: If you want to make any changes to the code then you have to assemble it again and generate a .com file
+to see changes in action for that you have to change the lines as follows : 
+; For c drive
+mount c c:\Project
+c:
+nasm main.asm -o main.com
+main.com
+
+
+; For d drive
+mount c d:\Project
+c:
+nasm main.asm -o main.com
+main.com
+
+
+Thanks :)
+
+
+
+
